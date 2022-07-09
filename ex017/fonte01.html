@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            /*quando são duas palavras,tem que usar aspas as aspas*/
+
+            /*Medidas absolutas:
+            cm, mm, in(poleg), px(pixel), pt(ponto), pc(paica)
+
+            Medidas Relativas:
+            em, ex, rem, vw, vh, %
+            16px geralmente = 1em
+
+            */
+
+
+           /* font-size:large;
+            font-weight: 800;
+            font-style: italic;
+            text-decoration: underline;
+            */
+        }
+        h1 {
+            /*font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 900;
+            font-size: 2.2em;
+            font-style: italic;*/
+
+            /*shorthand font 
+             SHORTHAND é uma propriedade em que eu consigo dizer várias coisas em uma única linha. 
+             1º font-style , 2º font weight, 3º font-size, 4º font family
+            */
+            font: italic bolder 2em Arial, sans-serif ;
+            /*posso deixar de usar o font-style, mas preciso sempre seguir a ordem*/
+        }
+        h2 {
+             font: bold 2em Arial;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit sequi repellat repellendus! Repudiandae illum, numquam porro laudantium sapiente dolorem soluta itaque cum error perferendis, consectetur, blanditiis eveniet quidem aperiam incidunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde deserunt ex magni molestiae quisquam itaque repudiandae, amet libero laborum corrupti culpa facilis, sit eligendi animi! Quibusdam totam magni reiciendis aliquid.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ipsum quae vel aperiam quo sed nihil! Ea eligendi dicta veritatis? Laboriosam facere odio voluptatem pariatur quasi tenetur nemo repellat ratione?</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos aliquid delectus vel, sit, necessitatibus nisi mollitia vitae ex ratione placeat facere sint doloribus quis explicabo beatae. Dolorum necessitatibus nihil dignissimos!</p>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Você pode acessar meu <a href="https://gustavoguanabara.github.io/" target="_blank" rel="external">repositório público no GitBub</a></p>
+    <p>Você também pode acessar o meu <a href="https://www.youtube.com/c/CursoemV%C3%ADdeo" target="_blank" rel="external">canal gratuito no YouTube</a></p>
+    <p><code>hreflang</code> indica qual o idioma principal do site que o link está enviando. Nesse exemplo o site do <a href="https://roadmap.sh/roadmaps" hreflang="en" target="_blank" rel="external">Developer Roadmaps.</a></p>
+    <p>Usando o atributo <code>target</code>:<br>_blank: Vai abrir em uma nova <a href="https://roadmap.sh/roadmaps" target="_blank" rel="external">janela em branco</a></p>
+    <p><code>_self</code>: vai abrir o links<a href="https://roadmap.sh/roadmaps" hreflang="en" target="_self" rel="external"> na janela ou frame atual</a> (padrão).</p>
+    <p><code>_top</code>: vai desfazer todos os frames e abrir o <a href="https://roadmap.sh/roadmaps" hreflang="en"  target="_top" rel="external">destino no navegador completo.</a></p>
+    <p><code>_parent</code>: similar ao uso do _top, em uma referência <a href="https://roadmap.sh/roadmaps" hreflang="en" target="_parent" rel="external">à janela mãe</a></p>
+    <p>Existe um recurso bem interessante para links que é indicar qual é a natureza do destino usando o atributo <code>rel</code>. Este atributo aceita vários valores, entre eles vale citar:</p>
+    <ul type="circle">
+        <li><code>next</code> indica que o <a href="pag002.html" target="_self" rel="next">link</a> é para a próxima parte do documento atual.</li>
+        <li><code>prev</code> indica que o <a href="https//parteanterior" target="_self" rel="prev">link</a> é para a parte anterior do documento atual</li>
+        <li><code>author</code> indica que é um <a href="https://roadmap.sh/roadmaps" target="_blank" rel="author">link</a> para o site do autor do artigo atual.</li>
+        <li><code>external</code> indica que é um <a href="https://roadmap.sh/roadmaps" target="_blank" rel="external">link</a> para outro site que não faz parte do site.</li>
+        <li><code>nofollow</code> indica que é um <a href="https://roadmap.sh/roadmaps" target="_blank" rel="nofollow">link</a> para um site não endossado, como um link pago.</li>
+    </ul>
+    <h1>Usando Links Internos</h1>
+    <p>Esta é a primeira página do site. Se você quiser, pode acessar também a minha <a href="pag002.html" target="_self" rel="next">segunda página</a></p>
+    <p>Você também pode acessar a nossa <a href="noticias/pag003.html" target="_self" rel="next">página de notícias</a>.</p>
+
+    <h1>Links para download</h1>
+    <ul>
+        <li><a href="livro/10 - Ligações em toda parte.pdf" download="livro/10 - Ligações em toda parte.pdf" type="application/pdf">Baixar o livro em PDF</a></li>
+        <li><a href="livro/10 - Ligações em toda parte.rar" download="livro/10 - Ligações em toda parte.rar" type="application/zip" >Baixar o livro compactado em ZIP</a></li>
+    </ul>
+</body>
+</html>
